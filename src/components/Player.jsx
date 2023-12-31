@@ -8,6 +8,7 @@ export default function Player() {
 
   function handleClick() {
     setEnteredPlayerName(playerName.current.value);
+    playerName.current.value = "";
   }
 
   return (
@@ -18,5 +19,5 @@ export default function Player() {
         <button onClick={handleClick}>Set Name</button>
       </p>
     </section>
-  );
+  ); 
 }
